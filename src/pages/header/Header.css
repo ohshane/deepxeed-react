@@ -31,17 +31,25 @@
 }
 
 .Header .header-area .nav-wrapper {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   right: 2em;
 }
 
 .Header .header-area .nav-wrapper .darkmode-wrapper {
-  display: inline-block;
+  display: block;
 }
 
 .Header .header-area .nav-wrapper .menu-wrapper {
-  display: inline-block;
+  display: block;
 }
 
 @media screen and (min-width: 800px) {
