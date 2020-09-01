@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
-import logo from 'images/logo.jpg';
+import logo from 'images/logo.svg';
+
+import { Switch } from '@material-ui/core';
 
 function Header() {
   return (
@@ -11,7 +13,7 @@ function Header() {
         </div>
         <div className="nav-wrapper">
           <div className="darkmode-wrapper">
-            darkmode
+            <Switch />
           </div>
           <div className="menu-wrapper">
             menu
