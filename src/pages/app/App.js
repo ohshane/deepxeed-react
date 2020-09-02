@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import './App.css';
 
 import Header from 'pages/header/Header';
+import Body from 'pages/body/Body';
 import Footer from 'pages/footer/Footer';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <ThemeProvider theme={isDarkmode ? dark : light}>
         <CssBaseline />
         <Header />
+        <Body />
         <Footer />
       </ThemeProvider>
     </div>

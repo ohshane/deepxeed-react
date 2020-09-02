@@ -4,7 +4,11 @@ import './Footer.css';
 function Footer() {
   return (
     <div className="Footer">
-      this is footer
+      <div className="footer-area">
+        <p>
+          footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer 
+        </p>
+      </div>
     </div>
   );
 }

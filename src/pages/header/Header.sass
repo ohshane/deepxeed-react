@@ -1,42 +1,44 @@
 *
   // border: 1px solid grey
   
-.Header
-  display: flex
-  justify-content: center
-
-  .header-area
+  .Header
     display: flex
     justify-content: center
-    align-items: center
-    width: 100%
 
-    .logo-wrapper
-      a
-        display: contents
-
-        img
-          display: block
-          height: 4em
-
-    .nav-wrapper
+    .header-area
       display: flex
-      position: absolute
       justify-content: center
       align-items: center
-      left: 2em
+      width: 100%
 
-      .DarkmodeSwitch
-        display: none
+      .logo-wrapper
+        a
+          display: contents
 
-      .menu-wrapper
+          img
+            display: block
+            height: 4em
+
+      .nav-wrapper
         display: flex
+        position: absolute
+        justify-content: center
         align-items: center
+        left: 1em
+
+        .DarkmodeSwitch
+          display: none
+
+        .menu-wrapper
+          display: flex
+          align-items: center
 
 
-  @media screen and (min-width: 700px)
+@media screen and (min-width: 700px)
+  .Header
+    padding: 1em 0
+
     .header-area
-      margin: 1em 0
       justify-content: left
       width: 80%
       max-width: 1600px
@@ -56,5 +58,5 @@
         left: 0
 
         .DarkmodeSwitch
-          margin: 0 1em
+          margin: 0 2em
           display: flex

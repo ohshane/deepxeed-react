@@ -1,4 +1,4 @@
-.Header {
+* .Header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,7 +7,7 @@
           justify-content: center;
 }
 
-.Header .header-area {
+* .Header .header-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,16 +20,16 @@
   width: 100%;
 }
 
-.Header .header-area .logo-wrapper a {
+* .Header .header-area .logo-wrapper a {
   display: contents;
 }
 
-.Header .header-area .logo-wrapper a img {
+* .Header .header-area .logo-wrapper a img {
   display: block;
   height: 4em;
 }
 
-.Header .header-area .nav-wrapper {
+* .Header .header-area .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,14 +40,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 2em;
+  left: 1em;
 }
 
-.Header .header-area .nav-wrapper .DarkmodeSwitch {
+* .Header .header-area .nav-wrapper .DarkmodeSwitch {
   display: none;
 }
 
-.Header .header-area .nav-wrapper .menu-wrapper {
+* .Header .header-area .nav-wrapper .menu-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,8 +57,10 @@
 }
 
 @media screen and (min-width: 700px) {
+  .Header {
+    padding: 1em 0;
+  }
   .Header .header-area {
-    margin: 1em 0;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -84,7 +86,7 @@
     left: 0;
   }
   .Header .header-area .nav-wrapper .DarkmodeSwitch {
-    margin: 0 1em;
+    margin: 0 2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
