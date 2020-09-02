@@ -1,36 +1,31 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { Switch, SvgIcon } from '@material-ui/core';
+import { Brightness2, Brightness5 } from '@material-ui/icons';
 import './Header.css';
+
 import logo from 'images/logo.svg';
+import { store, darkmodeSlice } from 'components/redux';
 
-function Header(props) {
-  function _darkmodeLogo(props) {
-    const darkmode = props.darkmode;
-    return (
-      darkmode === false ? <img src={logo} alt="logo" /> : <img src={logo} alt="logo" style={{filter: "invert(1)"}} />
-    );
-  }
-
-  function _darkmodeComponent(props) {
-    const darkmodeComponent = props.darkmodeComponent;
-    return (
-      darkmodeComponent === undefined ? undefined : <div className="darkmode-wrapper">{darkmodeComponent}</div>
-    );
-  }
-
-  const darkmodeComponent = props.darkmodeComponent;
+function Header() {
+  const isDarkmode = useSelector(state => state.darkmode.isDarkmode);
 
   return (
     <div className="Header">
       <div className="header-area">
         <div className="logo-wrapper">
           <a href="/">
-            {_darkmodeLogo(props)}
+            <img src={logo} alt="logo" style={(isDarkmode ? {filter: "invert(1)"} : {filter: "invert(0)"})} />
           </a>
         </div>
+        <div className="menu-wrapper">
+          menu
+        </div>
         <div className="nav-wrapper">
-          {_darkmodeComponent(props)}
-          <div className="menu-wrapper">
-            menu
+          <div className="darkmode-wrapper">
+            <SvgIcon component={Brightness5} fontSize="small" />
+            <Switch checked={isDarkmode} onChange={() => store.dispatch(darkmodeSlice.actions.toggle())} size="small" />
+            <SvgIcon component={Brightness2} fontSize="small" />
           </div>
         </div>
       </div>

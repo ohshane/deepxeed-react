@@ -1,5 +1,4 @@
 .Header {
-  padding: 1em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +26,7 @@
 
 .Header .header-area .logo-wrapper a img {
   display: block;
-  width: 150px;
+  height: 50px;
 }
 
 .Header .header-area .nav-wrapper {
@@ -58,7 +57,7 @@
         -ms-flex-pack: left;
             justify-content: left;
     width: 80%;
-    max-width: 1800px;
+    max-width: 1600px;
   }
   .Header .header-area .nav-wrapper {
     display: -webkit-box;
