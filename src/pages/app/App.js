@@ -3,7 +3,6 @@ import { ThemeProvider, createMuiTheme, CssBaseline } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import './App.css';
 
-import { store } from 'components/redux';
 import Header from 'pages/header/Header';
 import Footer from 'pages/footer/Footer';
 
