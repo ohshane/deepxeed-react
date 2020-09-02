@@ -10,7 +10,7 @@ import Footer from 'pages/footer/Footer';
 function App() {
   const isDarkmode = useSelector(state => state.darkmode.isDarkmode);
 
-  const dark = createMuiTheme({
+  const DARK = createMuiTheme({
     palette: {
       type: "dark",
       background: {
@@ -19,7 +19,7 @@ function App() {
     }
   });
 
-  const light = createMuiTheme({
+  const LIGHT = createMuiTheme({
     palette: {
       type: "light",
       background: {
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <ThemeProvider theme={isDarkmode ? dark : light}>
+      <ThemeProvider theme={isDarkmode ? DARK : LIGHT}>
         <CssBaseline />
         <Header />
         <Body />

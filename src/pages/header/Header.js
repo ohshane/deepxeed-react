@@ -3,9 +3,11 @@ import { useSelector } from 'react-redux';
 import './Header.css';
 
 import logo from 'images/logo.svg';
-import DarkmodeSwitch from 'components/DarkmodeSwitch/DarkmodeSwitch';
-import { SvgIcon } from '@material-ui/core';
+import { Button, SvgIcon } from '@material-ui/core';
 import { Menu } from '@material-ui/icons';
+
+import DarkmodeSwitch from 'components/DarkmodeSwitch/DarkmodeSwitch';
+import MenuDrawer from 'components/MenuDrawer/MenuDrawer';
 
 function Header() {
   const isDarkmode = useSelector(state => state.darkmode.isDarkmode);
@@ -21,7 +23,7 @@ function Header() {
         <div className="nav-wrapper">
           <DarkmodeSwitch className="DarkmodeSwitch" />
           <div className="menu-wrapper">
-            <SvgIcon component={Menu} />
+            <MenuDrawer className="MenuDrawer" />
           </div>
         </div>
       </div>
